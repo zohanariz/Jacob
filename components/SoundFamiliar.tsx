@@ -6,76 +6,76 @@ import { X } from "lucide-react";
 
 export default function SoundFamiliar() {
   return (
-    <section id="problem" className="py-16 sm:py-20 relative border-t border-white/[0.06]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Banner with 3D Illustration as Atmospheric Background */}
-        <div className="relative rounded-3xl overflow-hidden border border-white/10 bg-[#0d0f14] p-8 sm:p-12 lg:p-16 mb-16 sm:mb-20 shadow-2xl shadow-black/80">
-          {/* Background Image Layer */}
-          <div className="absolute inset-0 z-0">
-            <Image
-              src="/job-boards-illustration.png"
-              alt="Job boards atmospheric background"
-              fill
-              className="object-cover object-right opacity-65 sm:opacity-75 lg:opacity-85"
-              priority
-            />
-            {/* Dark Left-to-Right & Radial Gradient Overlays to guarantee 100% crisp text readability */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0d0f14] via-[#0d0f14]/95 sm:via-[#0d0f14]/85 to-transparent sm:w-3/4 lg:w-2/3" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d0f14] via-transparent to-[#0d0f14]/50" />
-            {/* Ambient Coral Glow */}
-            <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-80 h-80 bg-[#ff7a45]/20 rounded-full blur-3xl pointer-events-none" />
-          </div>
+    <section id="problem" className="py-16 sm:py-24 relative border-t border-white/[0.06] overflow-hidden">
+      {/* Background 3D Illustration - Seamlessly integrated directly into section background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden select-none">
+        <div className="absolute top-0 right-0 w-full lg:w-[65%] h-[420px] sm:h-[480px] lg:h-[520px]">
+          <Image
+            src="/job-boards-illustration.png"
+            alt="Job seeker surrounded by traditional job boards"
+            fill
+            className="object-cover object-right opacity-60 sm:opacity-75 lg:opacity-85"
+            priority
+          />
+          {/* Gradients to seamlessly blend the image into the page background on all sides */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0b0c0e] via-[#0b0c0e]/85 to-transparent w-full lg:w-3/5" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0b0c0e] via-transparent to-[#0b0c0e]/40" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0b0c0e]" />
+        </div>
+        {/* Soft Ambient Radial Glow */}
+        <div className="absolute top-1/4 right-1/4 w-[450px] h-[450px] bg-[#ff7a45]/15 rounded-full blur-[100px]" />
+      </div>
 
-          {/* Foreground Text & Pill Tags */}
-          <div className="relative z-10 max-w-2xl">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-white tracking-tight leading-[1.18] mb-4">
-              You&apos;re looking in the same{" "}
-              <span className="font-serif italic text-[#fba584]">
-                places as everyone else.
-              </span>
-            </h2>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+        {/* Top Text Content & Tags */}
+        <div className="max-w-2xl mb-16 sm:mb-20">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-white tracking-tight leading-[1.18] mb-4">
+            You&apos;re looking in the same{" "}
+            <span className="font-serif italic text-[#fba584]">
+              places as everyone else.
+            </span>
+          </h2>
 
-            <p className="text-sm sm:text-base text-neutral-300 font-normal leading-relaxed mb-6 sm:mb-8 max-w-xl">
-              Most people rely on the same job boards. But the best opportunities
-              live outside of them — in networks, private hires, and direct outreach.
-            </p>
+          <p className="text-sm sm:text-base md:text-lg text-neutral-300 font-normal leading-relaxed mb-6 sm:mb-8 max-w-xl">
+            Most people rely on the same job boards. But the best opportunities
+            live outside of them — in networks, private hires, and direct outreach.
+          </p>
 
-            {/* Pill Tags Cloud */}
-            <div className="flex flex-col gap-2.5">
-              {/* Row 1 */}
-              <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
-                <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#1a1413]/90 backdrop-blur-md border border-[#ff7a45]/45 text-[#fba584] font-medium shadow-sm transition-all hover:border-[#ff7a45]/70">
-                  LinkedIn
-                </div>
-                <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all">
-                  Indeed
-                </div>
-                <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all">
-                  Glassdoor
-                </div>
-                <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all">
-                  Naukri
-                </div>
-                <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all">
-                  Monster
-                </div>
-                <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all flex items-center gap-1.5">
-                  <span>Wellfound</span>
-                  <span className="text-[10px] text-neutral-500">▾</span>
-                </div>
+          {/* Pill Tags Cloud */}
+          <div className="flex flex-col gap-2.5">
+            {/* Row 1 */}
+            <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
+              <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#1a1413]/90 backdrop-blur-md border border-[#ff7a45]/45 text-[#fba584] font-medium shadow-sm transition-all hover:border-[#ff7a45]/70">
+                LinkedIn
               </div>
+              <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all">
+                Indeed
+              </div>
+              <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all">
+                Glassdoor
+              </div>
+              <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all">
+                Naukri
+              </div>
+              <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all">
+                Monster
+              </div>
+              <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all flex items-center gap-1.5">
+                <span>Wellfound</span>
+                <span className="text-[10px] text-neutral-500">▾</span>
+              </div>
+            </div>
 
-              {/* Row 2 */}
-              <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
-                <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all">
-                  Company career pages
-                </div>
-                <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all">
-                  Startup websites
-                </div>
-                <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all">
-                  Recruiters
-                </div>
+            {/* Row 2 */}
+            <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
+              <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all">
+                Company career pages
+              </div>
+              <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all">
+                Startup websites
+              </div>
+              <div className="px-4 py-2 rounded-xl text-xs sm:text-sm bg-[#14161c]/85 backdrop-blur-md border border-white/10 text-neutral-200 font-medium shadow-sm hover:border-white/20 transition-all">
+                Recruiters
               </div>
             </div>
           </div>
