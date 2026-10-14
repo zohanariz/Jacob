@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { X } from "lucide-react";
 
 export default function SoundFamiliar() {
@@ -65,6 +66,27 @@ export default function SoundFamiliar() {
           <div className="mb-6 sm:mb-8">
             <div className="px-6 py-3 rounded-[14px] text-xs sm:text-sm font-medium bg-[#1c1414] border border-[#ff7a45]/40 text-[#fba584] shadow-sm transform rotate-[2.5deg] hover:border-[#ff7a45]/60 transition-all">
               We&apos;re moving forward with other candidates
+            </div>
+          </div>
+
+          {/* 3D Illustration: The Job Board Search Trap */}
+          <div className="w-full max-w-4xl mx-auto my-6 sm:my-8 px-2 sm:px-0">
+            <div className="relative group">
+              {/* Ambient Glow */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#ff7a45]/25 via-[#fba584]/15 to-[#ff7a45]/25 rounded-3xl blur-2xl opacity-60 group-hover:opacity-85 transition duration-500 pointer-events-none" />
+
+              <div className="relative rounded-2xl sm:rounded-3xl border border-white/10 bg-[#0d0f14] overflow-hidden shadow-2xl shadow-black/90">
+                <Image
+                  src="/job-boards-illustration.png"
+                  alt="Candidate overwhelmed by identical job boards"
+                  width={1024}
+                  height={512}
+                  className="w-full h-auto object-cover transition-transform duration-700 ease-out group-hover:scale-[1.015]"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 pointer-events-none rounded-2xl sm:rounded-3xl ring-1 ring-inset ring-white/10" />
+              </div>
             </div>
           </div>
 
