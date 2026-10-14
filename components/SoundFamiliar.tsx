@@ -96,7 +96,15 @@ export default function SoundFamiliar() {
               {/* Back Card: Talent Acquisition */}
               <div className="absolute inset-x-0 -top-18 sm:-top-20 mx-auto rounded-[20px] bg-[#121318]/90 border border-white/5 p-4 sm:p-5 shadow-lg transform -rotate-[3.2deg] -translate-x-2.5 scale-[0.96] opacity-40 transition-all duration-300 group-hover:-translate-y-2 group-hover:-rotate-[4deg] group-hover:opacity-60 select-none pointer-events-none">
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#242630] shrink-0" />
+                  <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden border border-white/10 shrink-0 bg-[#242630]">
+                    <Image
+                      src="/avatars/recruiter-1.jpg"
+                      alt="Talent Acquisition recruiter avatar"
+                      fill
+                      className="object-cover"
+                      sizes="44px"
+                    />
+                  </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between">
                       <span className="font-semibold text-xs sm:text-sm text-neutral-300 truncate">
@@ -116,7 +124,15 @@ export default function SoundFamiliar() {
               {/* Middle Card: Recruiting */}
               <div className="absolute inset-x-0 -top-9 sm:-top-10 mx-auto rounded-[20px] bg-[#15161c]/95 border border-white/[0.08] p-4 sm:p-5 shadow-xl transform -rotate-[1.6deg] -translate-x-1 scale-[0.98] opacity-70 transition-all duration-300 group-hover:-translate-y-1 group-hover:-rotate-2 group-hover:opacity-85 select-none pointer-events-none">
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#2a2d37] shrink-0" />
+                  <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden border border-white/10 shrink-0 bg-[#2a2d37]">
+                    <Image
+                      src="/avatars/recruiter-2.jpg"
+                      alt="Recruiting specialist avatar"
+                      fill
+                      className="object-cover"
+                      sizes="44px"
+                    />
+                  </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between">
                       <span className="font-semibold text-xs sm:text-sm text-neutral-200 truncate">
@@ -136,7 +152,15 @@ export default function SoundFamiliar() {
               {/* Front Card: Hiring Team */}
               <div className="relative z-10 rounded-[20px] bg-[#181920] border border-white/10 p-4 sm:p-5 shadow-2xl shadow-black/90 transition-all duration-300 group-hover:border-white/20">
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#30333d] shrink-0" />
+                  <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden border border-white/15 shrink-0 bg-[#30333d] shadow-md">
+                    <Image
+                      src="/avatars/recruiter-3.jpg"
+                      alt="Hiring manager avatar"
+                      fill
+                      className="object-cover"
+                      sizes="44px"
+                    />
+                  </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between">
                       <span className="font-semibold text-xs sm:text-sm text-white">
